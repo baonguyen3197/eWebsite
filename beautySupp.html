@@ -12,33 +12,6 @@
 .checked {
   color: orange;
 }
-
-/* .flip-card {
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-} */
 </style>
 </head>
   <body>
@@ -93,40 +66,10 @@
     
     <!-- Body -->
     <!-- Grid -->
-    <div class="w3-row-padding" id="about">
+    <!-- <div class="w3-row-padding" id="about">
       <div class="w3-center w3-padding-64">
         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Sản phẩm chính</span>
       </div>
-
-      <!-- <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <div class="w3-center">
-            <img src="./img/NarisCosmetic.jpg" alt="John" style="width:60%">
-          </div>
-          <div class="w3-container">
-            <p><span class="w3-tag w3-blue">New!</span></p>
-            <h3>Viên Uống Tảo Lục Naris Cosmetic ITOH Chlorella</h3>
-            <p class="w3-opacity"> 1600 Viên</p>
-            <div class="w3-bar">
-              <h4 class="w3-text-red"> 1.200.000đ </h4>
-            </div>
-            <div class="w3-container">
-              <button class="w3-button w3-light-grey w3-center" style="margin-bottom: 2%;">Chi tiết</button>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <button class="w3-button w3-light-grey w3-right" style="margin-bottom: 2%;">Thêm vào giỏ</button>
-            </div>
-          </div>
-        </div>
-        <div onclick="toggleDiv()" class="w3-card-4" id="myDiv">
-          <h1>John Doe</h1> 
-          <p>Architect & Engineer</p> 
-          <p>We love that guy</p>
-        </div>
-      </div> -->
 
       <div class="w3-third w3-margin-bottom">
         <div class="w3-card-4 flip-card" id="myCard1">
@@ -173,32 +116,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="w3-third w3-margin-bottom">
-        <div class="w3-card-4">
-          <div class="w3-center">
-            <img src="./img/Pharmekal1.jpg" alt="Mike" style="width:60%">
-          </div>
-          <div class="w3-container">
-            <p><span class="w3-tag w3-red">-21%</span></p>
-            <h3>Viên Uống Pharmekal Dầu Cá Omega 3-6-9</h3>
-            <p class="w3-opacity"> 100 Viên</p>
-            <div style="display: flex;">
-              <h4 class="w3-text-gray w3-inline" style="text-decoration: line-through;"> 700.000đ </h4>
-              <h4 class="w3-text-red w3-inline"> 550.000đ </h4>
-            </div>
-            <div class="w3-container">
-              <button class="w3-button w3-light-grey w3-center" style="margin-bottom: 2%;">Chi tiết</button>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <button class="w3-button w3-light-grey w3-right" style="margin-bottom: 2%;">Thêm vào giỏ</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
       <div class="w3-third w3-margin-bottom">
         <div class="w3-card-4 flip-card" id="myCard2">
@@ -250,6 +167,76 @@
         </div>
       </div>
 
+    </div> -->
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <div class="w3-quarter">
+        <img src="./img/lifeBanner1.jpg" alt="Sandwich" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+
+        <div class="w3-card-4 flip-card" id="myCard1">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="w3-center">
+                <img src="./img/NarisCosmetic.jpg" alt="John" style="width:60%">
+              </div>
+              <div class="w3-container">
+                <p><span class="w3-tag w3-blue w3-left">New!</span></p>
+                <h3>Viên Uống Tảo Lục Naris Cosmetic ITOH Chlorella</h3>
+                <p class="w3-opacity"> 100 Viên</p>
+                <div style="display: flex;">
+                  <h4 class="w3-text-gray w3-inline" style="text-decoration: line-through;"> 700.000đ </h4>
+                  <h4 class="w3-text-red w3-inline"> 550.000đ </h4>
+                </div>
+                <div class="w3-center">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="w3-row" style="margin-top: 2%;">
+                  <button class="w3-button w3-light-grey w3-center" style="margin-bottom: 2%;" onclick="flipCard('myCard1')">Chi tiết</button>
+                  <button class="w3-button w3-light-grey" style="margin-bottom: 2%;">Thêm vào giỏ</button>
+                </div>
+              </div>
+            </div>
+            <div class="w3-card-4 flip-card-back" style="display:none">
+              <div class="w3-container">
+                <div class="w3-container">
+                  <h4>Thành phần sản phẩm</h4>
+                  <p class="w3-text-grey">⦁ Dầu Cá 180mg , EPA 144mg , DHA 96mg , Dầu Hạt Lanh: Giúp duy trì hệ thống tim mạch khỏe mạnh, hỗ trợ giảm nguy cơ mắc bệnh về tim. </p>
+                  <p class="w3-text-grey">⦁ Omega 3-6-9 tốt cho các tế bào, tim và cho quá trình chuyển hóa nhằm tạo năng lượng cho cơ thể. </p>
+                  <p class="w3-text-grey">⦁ EPA và DHA giúp duy trì lượng mỡ trong máu ở mức bình thường và có thể giảm các nguy cơ tim mạch. </p><br>
+                
+                  <h4>Hướng dẫn sử dụng</h4>
+                  <p class="w3-text-grey">Ngày uống 1 đến 2 lần, mỗi lần 1 viên hoặc theo hướng dẫn trong hộp. </p><br>
+
+                  <h4>Bảo quản</h4>
+                  <p class="w3-text-grey">⦁	Để xa tầm tay trẻ em. </p>
+                  <p class="w3-text-grey">⦁ Không đặt ở những nơi có ánh sáng trực tiếp chiếu vào, hay những nơi có nhiệt độ quá cao. </p>
+                  <p class="w3-text-grey">⦁	Đậy nắp kín sau khi sử dụng. </p><br>
+                  
+                  <button class="w3-button w3-white w3-xlarge w3-right" onclick="flipCard('myCard1')">&times;</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+    </div>
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -288,6 +275,11 @@
         window.location.href = 'products.html';
     });
 
+    // Logged out notification
+    function showNotification() {
+      alert("Bạn đã đăng xuất thành công!");
+    }
+
     // Show details
     function flipCard(cardId) {
       var card = document.getElementById(cardId);
@@ -302,6 +294,27 @@
         back.style.display = "none";
       }
     }
+
+    // Get the shopping cart icon and badge
+    var cartIcon = document.querySelector(".fa-shopping-cart");
+    var cartBadge = cartIcon.querySelector(".w3-badge");
+
+    // Get all "Thêm vào giỏ" buttons
+    var addToCartButtons = document.querySelectorAll(".w3-button.w3-light-grey.w3-right");
+
+    // Add a click event listener to each button
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        // Get the current value of the badge
+        var currentValue = parseInt(cartBadge.textContent);
+
+        // Increase the value by 1
+        var newValue = currentValue + 1;
+
+        // Update the badge with the new value
+        cartBadge.textContent = newValue;
+      });
+    });
   </script>
 </body>
 </html>

@@ -7,6 +7,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+  .tablink {
+  display: inline-block;
+  width: 20%;
+  }
+
+  .w3-col {
+    width: 100%;
+  }
+</style>
 </head>
   <body>
     <!-- Navbar -->
@@ -66,21 +76,21 @@
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Các chính sách</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'paymentPolicy');" id="paymentLink">
-        <div class="w3-col s4 tablink">Chính sách thanh toán</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'deliveryPolicy');" id="deliveryLink">
-        <div class="w3-col s4 tablink">Chính sách giao hàng</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'returnPolicy');" id="returnLink">
-        <div class="w3-col s4 tablink">Chính sách đổi trả</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'securityPolicy');" id="securityLink">
-        <div class="w3-col s4 tablink">Chính sách bảo mật</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'discountPolicy');" id="discountLink">
-        <div class="w3-col s4 tablink">Chính sách ưu đãi</div>
-      </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'paymentPolicy');" id="paymentLink">
+          <div class="w3-col m2 tablink">Chính sách thanh toán</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'deliveryPolicy');" id="deliveryLink">
+          <div class="w3-col m2 tablink">Chính sách giao hàng</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'returnPolicy');" id="returnLink">
+          <div class="w3-col m2 tablink">Chính sách đổi trả</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'securityPolicy');" id="securityLink">
+          <div class="w3-col m2 tablink">Chính sách bảo mật</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'discountPolicy');" id="discountLink">
+          <div class="w3-col m2 tablink">Chính sách ưu đãi</div>
+        </a>
     </div>
 
     <div id="paymentPolicy" class="w3-container menu w3-padding-48 w3-card">
